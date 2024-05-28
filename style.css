@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+:root {
+    --cor-padrao:  rgb(215, 30, 71);
+    --cor-padrao-hover: #180C1A;
+    --cor-fonte:#ffff;
+    --cor-fonte-p:#555;
+    --cor-btn-: #103778;
+    --cor-btn-hover: #FFFF00;
+    --cor-btn-fonte: #000;
+    --cor-fonte-corpo: #555;
+    --cor-fonte-corpo-leve: #777;
+}
+
+body{
+    font-family:'poppins', sans-serif;
+}
+
+.banner{
+    
+    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    box-shadow: 2px 1px 30px #00000064;
+}
+
+.banner .linha{
+     margin-top:70px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-size: 18px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    transition-duration: 0.7s;
+   
+}
+
+nav ul li a:hover{
+    color: var(--cor-btn-hover);
+    background-color: #103778;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+
+.banner p {
+    color: var(--cor-fonte);
+}
+
+p{
+    color: var(--cor-fonte-p);
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0px;
+}
+
+.col-2 h1{
+    padding-top: 70px;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    color:var(--cor-btn-hover);
+
+}
+
+.col-2 p {
+    color: var(--cor-fonte);
+   
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    background: #103778;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s ;
+}
+
+.btn:hover{
+    background:var(--cor-btn-hover);
+    color: var(--cor-btn-hover);
+    color: var(--cor-btn-fonte);
+}
+
+.categorias{
+    margin: 70px 0;
+}
+
+.corpo-categorias{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-3{
+    flex-basis: 30%;
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 1px 10px #000;
+    border-radius: 3px;
+}
+
+/*---------------------------------------------------------*/
+
+.titulo{
+    position: relative;
+    line-height: 60px;
+    margin: 0 auto 80px;
+    text-align: center;
+
+
+
+
+}
+
+.titulo::after{
+    content: '';
+    background-color:var(--cor-padrao);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.col-4 {
+    flex-basis: 30%;
+    margin-bottom: 50px;
+    transition: transform 1.0s;
+}
+
+
+
+.col-4 img {
+    
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 1px 10px #000;
+}
+
+.col-4:hover{
+    transform: scale(1.2);
+}
+
+.oferta {
+    color:var(--cor-fonte-corpo);
+    font-weight: normal;
+
+}
+
+
+.classificacao ion-icon {
+
+    color: var(--cor-padrao);
+}
+/*-----------------------------------------------------------*/
+
+
+.categorias3 h2{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+
+.categorias3 > img {
+    width: 100%;
+    display:inline-block;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 100px;
+   
+}
+
+.plus{
+    transition: transform 0.5s;
+}
+.plus:hover{
+    transform: scale(1.1);
+
+}
+
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #103778;
+    padding-bottom: 50px;
+}
+
+footer p{
+    color: #103778;
+}
+
+
+
+
+
+/*-----------------MENU CELULAR ----------------*/
+
+.menu-celular{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position:absolute ;
+        top: 70px;
+        left: 0;
+        background:#00000085;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-left: 50%;
+        margin-bottom: 10px;
+    
+    }
+   
+    nav ul li a{
+        color: var(--cor-fonte);
+    }
+    .menu-celular{
+        display: block;
+    }
+}
+
+    .open{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cookiePopup{
+    background-color: var(--cor-fonte);
+    position: absolute;
+    font-size: 12px;
+    width: 80vw;
+    max-width: 40.85em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: justify;
+    line-height: 1.6em;
+    padding: 1em 1.4em;
+    border-radius: 6px;
+    transition: all 1.0 ease-in-out;
+}
+
+#cookiePopup img{
+    display: block;
+    width: 3.75em;
+    transform: translateZ(0);
+    position: relative;
+    margin: auto;
+
+}
+
+#cookiePopup p {
+    text-align: center;
+    margin: 0.9em 0;
+
+}
+
+#cookiePopup button {
+    background-color:var(--cor-btn-);
+    border: none;
+    color: var(--cor-fonte);
+    font-size: 1.2em;
+    padding: 1em 1.4em;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+#cookiePopup button:hover {
+    background:var(--cor-btn-hover);
+    color: var(--cor-btn-hover);
+    color: var(--cor-btn-fonte);
+
+}
+.hide{
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+
+}
+.show{
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+
+}
+
+@media only screen and (max-width: 37.5em){
+    #cookiePopup{
+        width: 100%;
+    }
+    .hide{
+        bottom: 2em;
+        right: 0;
+    }
+
+    .show {
+        right: 0;
+        bottom: 0;
+    }
+}
+    
